@@ -11,7 +11,22 @@
 
 
 # Main
+echo "-----------------------------------------------------------------------------------"
+echo You will be able to kill as many processes as you want until you exit with Ctrl+C
+echo "-----------------------------------------------------------------------------------"
 
-ps aux
+for command in $(ps -au)
+do
+echo "Displaying running processes:"
+echo "-------------------------------"
+ps -au
+
+echo Enter PID you want to kill: 
+read user_input
+
+kill -9 $user_input
+echo PID $user_input was killed
+echo "-------------------------------"
+done
 
 # End
