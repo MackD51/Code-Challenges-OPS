@@ -21,7 +21,7 @@ echo "Displaying running processes:"
 echo "-------------------------------"
 ps -au
 
-echo Enter PID you want to kill: 
+echo Enter a PID you want to kill: 
 read user_input
 
 kill -9 $user_input
