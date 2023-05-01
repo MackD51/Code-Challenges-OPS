@@ -15,7 +15,7 @@ echo "--------------------------------------------------------------------------
 echo You will be able to kill as many processes as you want until you exit with Ctrl+C
 echo "-----------------------------------------------------------------------------------"
 
-for command in $(ps -au)
+while :
 do
 echo "Displaying running processes:"
 echo "-------------------------------"
