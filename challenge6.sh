@@ -16,7 +16,7 @@
 mkdir directory1
 mkdir directory2
 
-#created 2 arrays: 1 with 3 directories, and 1 fith 3 files
+#created 2 arrays: 1 with 3 directories, and 1 with 3 files
 directories=(directory1 directory2 directory3)
 files=(file1 file2 file3)
 
