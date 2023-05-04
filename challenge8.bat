@@ -14,15 +14,30 @@
 
 @echo off
 
-set source="C\Users\md51\Desktop\Folder"
+set /p s=Enter the source Folder path (where you want to copy from): 
 
-set destination="C\Users\md51\Documents\Copy_Folder"
+set /p d=Enter your Folder destination path (where you want it to copy):
 
-robocopy %source% %destination% /E
+ROBOCOPY "%s%" "%d%" /S
 
-echo Your folder was saved automatically
+echo Your folder together with all the files were saved in the provided destination
 
 pause
+
+
+
+# Command I've used in the PowerShell: .\challenge8.bat
+
+
+
+# I've tried this script first on my own computer, and it worked perfectly fine:
+
+# @echo off
+
+# ROBOCOPY C:\Users\md51\Favorites\Folder C:\Users\md51\Documents\New"
+
+# pause
+
 
 
 # End
