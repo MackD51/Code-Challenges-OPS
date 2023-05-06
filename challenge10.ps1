@@ -11,12 +11,10 @@
 
 # Main
 
-#Print to the terminal screen all active processes 
-#ordered by highest CPU time consumption at the top.
+#Print to the terminal screen all active processes ordered by highest CPU time consumption at the top.
 Get-Process | Sort-Object -Property CPU -Descending
 
-#Print to the terminal screen all active processes ordered by 
-#highest Process Identification Number at the top.
+#Print to the terminal screen all active processes ordered by highest Process Identification Number at the top.
 Get-Process | Sort-Object -Descending Id
 
 # End
