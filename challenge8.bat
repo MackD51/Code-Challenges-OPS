@@ -1,43 +1,18 @@
-#!/bin/bash
-
 # Script Name:                  Challenge 8
 # Author:                       Mack Dirks
 # Date of latest revision:      05/03/2023
 # Purpose:                      Windows Batch Scripting
 
-# Declaration of variables
-
-# Declaration of functions
-
 
 # Main
 
-@echo off
+#Jorge's folder was created on my Desktom with some subdirectories and files
 
-set /p s=Enter the source Folder path (where you want to copy from): 
+robocopy C:\Users\md51\OneDrive\Desktop C:\Users\md51\Documents /s /logs+:jorgelogfile.txt
 
-set /p d=Enter your Folder destination path (where you want it to copy):
+#If we want to make sure this backup runs only during certain times, we would add /rh:2300-0600 (or some different time window) as well
 
-ROBOCOPY "%s%" "%d%" /S
-
-echo Your folder together with all the files were saved in the provided destination
-
-pause
-
-
-
-# Command I've used in the PowerShell: .\challenge8.bat
-
-
-
-# I've tried this script first on my own computer, and it worked perfectly fine:
-
-# @echo off
-
-# ROBOCOPY C:\Users\md51\Favorites\Folder C:\Users\md51\Documents\New"
-
-# pause
-
-
+#In order to automate it, we would go to our Task Scheduler -> Create Basic Task -> would give it a name -> 
+#would choose if we want it to perform once/daily/etc. -> Start Process and provide a path
 
 # End
