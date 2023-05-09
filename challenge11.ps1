@@ -1,7 +1,7 @@
 # Script Name:                  Challenge 11
 # Author:                       Mack Dirks
 # Date of latest revision:      05/08/2023
-# Purpose:                      System Process Commands
+# Purpose:                      Automated Endpoint Configuration
 
 #Enable File and Printer Sharing
 Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True
