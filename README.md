@@ -1,4 +1,4 @@
-Scripting and Automation Repository
+# Scripting and Automation Repository
 
 Welcome to my scripting and automation repository! 
 
@@ -6,7 +6,7 @@ This project is focused on building my skills in bash and PowerShell scripting, 
 
 As a future cyber professional, I have created this repository to practice and learn the fundamentals of scripting and automate tedious tasks on various systems.
 
-Key Concepts Explored
+## Key Concepts Explored
 
 Throughout this project, I have explored and tested several fundamental concepts, including:
 
@@ -36,9 +36,15 @@ Domain Information Retrieval: Fetch domain-related information using commands li
 
 By exploring these concepts, I aim to enhance my scripting and automation skills, enabling me to excel in my future cyber professional career.
 
+## Favorite Challenges
+
 I have learned a lot while writing all these scripts. One of my favorite challenges was the "Domain Analizer" challenge. The script I wrote allowed me to automate the gathering of useful information about a domain for defensive purposes. It could be a very useful tool in preventing future cyber attacks on a web server.
 
+## Application of the Scripts in the Workplace
+
 These examples of shell scripting can assist with task automation, retrieval of system information, generating reports, managing processes, analyzing different logs, updating csystem configurations, processing data, etc.
+
+## My Goals
 
 My current goal is to improve the automation scripts.
 
