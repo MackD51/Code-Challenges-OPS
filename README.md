@@ -23,9 +23,4 @@ Domain Information Retrieval: Fetch domain-related information using commands li
 By exploring these concepts, I aim to enhance my scripting and automation skills, enabling me to excel in my future cyber professional career.
 
 
-#What was your favorite Ops Challenge assignment and why?
-#How can these examples of shell scripting be applied to the workplace?
-#What scripts would you continue to improve if you had the time?
-#What aspect of your shell scripting skillset do you hope to improve next?
-
 Feel free to explore the scripts and examples in this repository. Feedback and suggestions are always welcome!
