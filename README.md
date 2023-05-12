@@ -24,15 +24,15 @@ Throughout this project, I have explored and tested several fundamental concepts
 
 - **Conditionals:** Learn to make decisions within scripts using conditionals, enabling different code execution paths based on specific conditions, such as checking it a file exists and creating a new file if it does not.
 
-- **System Information Retrieval:** Discover techniques for retrieving system information using commands such as <lshw>.
+- **System Information Retrieval:** Discover techniques for retrieving system information using commands such as `lshw`.
 
-- **Automation:** Develop automation scripts to streamline repetitive or tedious tasks, including examples like automating copy operations using <ROBOCOPY> or configuring new Windows 10 endpoints.
+- **Automation:** Develop automation scripts to streamline repetitive or tedious tasks, including examples like automating copy operations using `ROBOCOPY` or configuring new Windows 10 endpoints.
 
 - **PowerShell Commands:** Learn a variety of PowerShell commands (cmdlets) to manage processes, fetch system event logs, retrieve information about running processes, and open, and close processes.
 
 - **Filtering and Searching:** Utilize PowerShell cmdlets like Select-String to filter script outputs and search for specific text patterns within files or folders.
 
-- **Domain Information Retrieval:** Fetch domain-related information using commands like <whois>, <dig>, <host>, <nslookup>, and employ variables and functions for enhanced functionality.
+- **Domain Information Retrieval:** Fetch domain-related information using commands like `whois`, `dig`, `host`, `nslookup`, and employ variables and functions for enhanced functionality.
 
 By exploring these concepts, I aim to enhance my scripting and automation skills, enabling me to excel in my future cyber professional career.
 
