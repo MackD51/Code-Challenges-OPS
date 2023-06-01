@@ -10,12 +10,12 @@
 # Main
 
 
-timestamp=$(date +%Y-%m-%d_%H-%M-%S)
+today=$(date +%Y-%m-%d)
 
-destination_file="syslog_${timestamp}.log"
+new_file="syslog_${today}.log"
 
 cp /var/log/syslog "${new_file}"
 
-echo "Copied /var/log/syslog to ${new_file}"
+echo "Copied syslog to ${new_file}"
 
 # End
