@@ -7,18 +7,16 @@
 
 
 # Main
-read -p "Provide the directory path: " dir_path
 
-perm=read "Provide the permission number: "
+read -p "Provide the directory path: " dir_path
+read -p "Provide the permission number: " perm
 
 cd "$dir_path"
 
-chmod "$perm" *
+chmod -r "$perm" .
 
-ls -l
+echo "Displaying the directory contents: "
 
-stat -c
-
-
+ls -l "$dir_path"
 
 # End
