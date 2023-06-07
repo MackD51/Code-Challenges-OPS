@@ -15,7 +15,7 @@ whoami_command = os.popen("whoami", mode="r", buffering=- 1)
 ipa_command = os.popen("ip a", mode="r", buffering=- 1)
 lshw_command = os.popen("lshw -short", mode="r", buffering=- 1)
 
-# Creating variables and reading the output of our commands into these variables
+# Reading our commands' output into the variables
 whoami_result = whoami_command.read()
 ipa_result = ipa_command.read()
 lshw_result = lshw_command.read()
