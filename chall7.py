@@ -11,7 +11,7 @@ import os
 # Declaration of variables 
 
 # Reading a user input into a variable
-user_path = input("Enter a directory path: ")
+path = input("Enter a directory path: ")
 
 # Declaration of a function with a general parameter
 def dir_info(testdir):
@@ -22,8 +22,8 @@ def dir_info(testdir):
 
 # Main
 
-# Calling the dir_creation function
+# Calling the dir_info function
 # Passing the variable "path" into it
-dir_info(user_path)
+dir_info(path)
 
 # End
