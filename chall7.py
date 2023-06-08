@@ -8,7 +8,7 @@
 # Import libraries
 import os
 
-# Declaration of variables
+# Declaration of variables 
 
 # Reading a user input into a variable
 user_path = input("Enter a directory path: ")
