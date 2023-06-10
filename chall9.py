@@ -8,7 +8,6 @@
 
 # Main
 
-
 print("Enter a:")
 a = int(input())
 print("Enter b:")
