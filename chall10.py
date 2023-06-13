@@ -19,7 +19,7 @@ new_file.write("Hello world 3\n")
 
 new_file.close()
 
-# Prints to the screen the first line (calling readline() function only once)
+# Prints to the screen the first line (calling readline() only once)
 new_file = open("file.txt", "r")
 first_line = new_file.readline()
 print("\n", first_line)
