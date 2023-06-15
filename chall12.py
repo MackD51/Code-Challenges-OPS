@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-# Script Name:                  Challenge 11
+# Script Name:                  Challenge 12
 # Author:                       Mack Dirks
-# Date of latest revision:      06/13/2023
-# Purpose:                      Psutil
+# Date of latest revision:      06/14/2023
+# Purpose:                      Python Requests Library
 
 import requests
 
