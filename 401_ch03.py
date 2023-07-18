@@ -20,7 +20,7 @@ password = getpass("enter password: ")
 ip_addr = input("Enter Target IP: ")
 up = "ip is up"
 down ="ip is down"
-mailbot = mailbot@codefellows.com
+mailbot = "mailbot@codefellows.com"
 
 # check status change
 last_status = 0
@@ -47,7 +47,7 @@ def up_to_down():
     smtp_session = smtplib.SMTP('smtp.gmail.com', 587)
     smtp_session.starttls()
     smtp_session.login(email, password)
-    message = "Server is down!"
+    message = "Server is Literally on Fire!"
     smtp_session.sendmail(mailbot, email, message)
     smtp_session.quit()
 
@@ -76,5 +76,5 @@ status_msg = ping_status("ip_addr")
 
 while True:
     current = datetime.datetime.now()
-    print(str(current) + " " + last_status + " to ip_addr")
+    print(str(current) + " " + status_msg + " to ip_addr")
     time.sleep(2)
