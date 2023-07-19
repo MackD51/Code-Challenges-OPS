@@ -10,23 +10,27 @@ import cryptography.fernet as fernet
 
 
 
-def folder_encryption(folder, encryption_key)
-    for root, dirs, files in os.walk(folder):
+def folder_encryption(folder_location, encryption_key)
+    for root, dirs, files in os.walk(folder_location):
         for file_name in files:
             full_path = os.path.join(root, file_name)
             folder_encryption(full_path, encryption_key)
     
-def folder_decryption(folder, encryption_key)
+def folder_decryption(folder_location, encryption_key)
+    for root, dirs, files in os.walk(folder_location):
+        for file_name in files:
+            full_path = os.path.join(root, file_name)
+            folder_encryption(full_path, encryption_key)
 
 # Main
 print("To encrypt a folder, select 1")
 print("To decrypt a folder, select 2")
 user_choice = input("Make a selection now: ")
-folder = input("Provide the path to your folder: ")
+folder_location = input("Provide the path to your folder: ")
 encryption_key = fernet.Fernet.generate_key()
 
 if user_choice == "1":
-    folder_encryption(folder, encryption_key)
+    folder_encryption(folder_location, encryption_key)
 elif user_choice == "2":
-    folder_decryption(folder, encryption_key)
+    folder_decryption(folder_location, encryption_key)
 else:
