@@ -85,7 +85,7 @@ def folder_decryption(dir_location, key):
 
 def change_desktop_background():
         imageUrl = 'https://images.idgesg.net/images/article/2018/02/ransomware_hacking_thinkstock_903183876-100749983-large.jpg'
-        # Go to specif url and download+save image using absolute path
+        # Go to specific url and download+save image using absolute path
         # os.path.expanduser() is a method in Python's os.path module that expands a pathname that uses ~ or ~user to the specified user's home directory
         path = os.path.expanduser('~/Desktop/background.jpg')
         urllib.request.urlretrieve(imageUrl, path)
