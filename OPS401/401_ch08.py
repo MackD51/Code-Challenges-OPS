@@ -17,7 +17,6 @@ from os.path import exists
 import ctypes
 import pyautogui
 import urllib.request
-
 from cryptography.fernet import Fernet
 
 # Variable declaration
