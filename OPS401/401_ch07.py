@@ -8,6 +8,15 @@
 import os
 from cryptography.fernet import Fernet
 
+# Variable declaration
+answer = "yes"
+
+for root, dirs, files in os.walk(dir_location, topdown=True):
+        for file in files:
+             print(os.path.join(root, file))
+        for dir in dirs:
+             print(os.path.join(root, dir))
+             
 # Function to generate the key
 def gen_key():
     key = Fernet.generate_key()
