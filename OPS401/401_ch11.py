@@ -37,3 +37,24 @@ for destination_port in port_range:
     # Check if no flag is received
     else:
         print(f"\n{host}:{destination_port} is filtered and silently dropped")
+
+
+
+
+
+
+
+
+
+
+        # Define variables
+# network = "10.0.2.0/24"
+# ip_list = ipaddress.IPv4Network(network)
+# host_count = 0
+# for addr in ip_list:
+#     print(addr)
+
+
+
+
+# host="scanme.nmap.org"
