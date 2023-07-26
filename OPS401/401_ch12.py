@@ -54,14 +54,12 @@ def icmp_sweep():
 
     # Send ICMP request for each host
     for host in ip_list:
-        response = sr1(IP(dst=str(host))/ICMP(),timeout=1,verbose=0)
         if (host in (ip_list.network_address, ip_list.broadcast_address)):
-            response = sr1(IP(dst=str(host))/ICMP(),timeout=1,verbose=0)
             # Skip
             print(f"Host {host} is down")
             continue
-            
-        
+        response = sr1(IP(dst=str(host))/ICMP(), timeout=1, verbose=0)
+
         if response != None:
             if (int(response.getlayer(ICMP).type) == 3 and int(response.getlayer(ICMP).code) in [1,2,3,9,10,13]):
                 print(f"Host {host} is actively blocking ICMP traffic")
@@ -69,6 +67,7 @@ def icmp_sweep():
             else:
                 print(f"Host {host} is responding")
                 host_count = host_count + 1
+    print(f"\nThere are {host_count} hosts online")
 
 
 # Menu function
